@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<config>
+  <app>
+    <name>generic-letter-metadata</name>
+    <title>Generic-letter-metadata Editor</title>
+    <def_prof>clarin.eu:cr1:p_1758888743558</def_prof>
+    <cmdi_version>1.2</cmdi_version>
+    <access>
+      <read>any</read>
+      <write>any</write>
+    </access>
+    <prof>
+      <generic-letter-metadata>
+        <prof>clarin.eu:cr1:p_1758888743558</prof>
+        <title>string((/cmd:CMD/cmd:Components//cmdp:*[empty(cmdp:*)][normalize-space(text())!=''])[1])</title>
+        <list>
+          <first>
+            <xpath>string((/cmd:CMD/cmd:Components//cmdp:*[empty(cmdp:*)][normalize-space(text())!=''])[1])</xpath>
+            <label>First</label>
+            <sort>true</sort>
+            <filter>true</filter>
+          </first>
+        </list>
+      </generic-letter-metadata>
+    </prof>
+  </app>
+</config>

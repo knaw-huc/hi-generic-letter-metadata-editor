@@ -1,0 +1,24 @@
+
+[app]
+name="generic-letter-metadata"
+title="Generic-letter-metadata Editor"
+def_prof="clarin.eu:cr1:p_1758888743558"
+cmdi_version="1.2"
+
+[app.access]
+#users="./htp.test" # location of the htpassword file, i.e. the "users" and "owner"
+read="any" # or "users" or "owner"
+write="any" # or "users" or "owner"
+
+[app.prof.generic-letter-metadata]
+prof="clarin.eu:cr1:p_1758888743558"
+title="string((/cmd:CMD/cmd:Components//cmdp:*[empty(cmdp:*)][normalize-space(text())!=''])[1])"
+
+[app.prof.generic-letter-metadata.list]
+        
+[app.prof.generic-letter-metadata.list.first]
+xpath="string((/cmd:CMD/cmd:Components//cmdp:*[empty(cmdp:*)][normalize-space(text())!=''])[1])"
+label="First"
+sort="true"# or "false"
+filter="true"# or "'select'"
+                

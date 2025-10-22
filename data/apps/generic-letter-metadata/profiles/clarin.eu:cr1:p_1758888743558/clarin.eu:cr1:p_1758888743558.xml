@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ComponentSpec isProfile="true" CMDVersion="1.2" CMDOriginalVersion="1.2" xsi:noNamespaceSchemaLocation="https://infra.clarin.eu/CMDI/1.x/xsd/cmd-component.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <ID>clarin.eu:cr1:p_1758888743558</ID>
+        <Name>Letter</Name>
+        <Description>t.b.d.</Description>
+        <Status>development</Status>
+    </Header>
+    <Component name="Letter" CardinalityMin="1" CardinalityMax="1">
+        <Component name="PersonObservation" ComponentRef="clarin.eu:cr1:c_1758888743556" ConceptLink="https://personsincontext.org/model#PersonObservation" CardinalityMin="1" CardinalityMax="1">
+            <Documentation>https://personsincontext.org/model/#PersonObservation</Documentation>
+            <Component name="Source" ComponentRef="clarin.eu:cr1:c_1758888743557" ConceptLink="https://schema.org/CreativeWork" CardinalityMin="1" CardinalityMax="1">
+                <Documentation>https://personsincontext.org/model/#ArchiveComponent</Documentation>
+                <Element name="name" ConceptLink="https://schema.org/name" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+                    <Documentation>The name of the item. (Also used for titles).</Documentation>
+                </Element>
+            </Component>
+        </Component>
+    </Component>
+</ComponentSpec>
