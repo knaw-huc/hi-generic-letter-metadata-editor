@@ -3,7 +3,7 @@
   <app>
     <name>generic-letter-metadata</name>
     <title>Generic-letter-metadata Editor</title>
-    <def_prof>clarin.eu:cr1:p_1758888743558</def_prof>
+    <def_prof>clarin.eu:cr1:p_1761816151556</def_prof>
     <cmdi_version>1.2</cmdi_version>
     <access>
       <read>any</read>
@@ -11,7 +11,7 @@
     </access>
     <prof>
       <generic-letter-metadata>
-        <prof>clarin.eu:cr1:p_1758888743558</prof>
+        <prof>clarin.eu:cr1:p_1761816151556</prof>
         <title>string((/cmd:CMD/cmd:Components//cmdp:*[empty(cmdp:*)][normalize-space(text())!=''])[1])</title>
         <list>
           <first>
@@ -22,6 +22,20 @@
           </first>
         </list>
       </generic-letter-metadata>
+      <person>
+        <prof>clarin.eu:cr1:p_1758888743558</prof>
+        <label_en>person-reconstruction</label_en>
+        <label_plural_en>person-reconstructions</label_plural_en>
+        <title>string((//cmdp:authorisedForm[@xml:lang='en'],//cmdp:authorisedForm)[1])</title>
+        <list>
+          <nr>
+            <xpath>replace(//*:MdSelfLink,'unl://','')</xpath>
+            <label>nr</label>
+            <sort>true</sort>
+            <filter>true</filter>
+          </nr>
+        </list>
+      </person>
     </prof>
   </app>
 </config>
