@@ -1,20 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ComponentSpec isProfile="true" CMDVersion="1.2" CMDOriginalVersion="1.2" xsi:noNamespaceSchemaLocation="https://infra.clarin.eu/CMDI/1.x/xsd/cmd-component.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <Header>
-        <ID>clarin.eu:cr1:p_1758888743558</ID>
-        <Name>Letter</Name>
-        <Description>t.b.d.</Description>
-        <Status>development</Status>
-    </Header>
-    <Component name="Letter" CardinalityMin="1" CardinalityMax="1">
-        <Component name="PersonObservation" ComponentRef="clarin.eu:cr1:c_1758888743556" ConceptLink="https://personsincontext.org/model#PersonObservation" CardinalityMin="1" CardinalityMax="1">
-            <Documentation>https://personsincontext.org/model/#PersonObservation</Documentation>
-            <Component name="Source" ComponentRef="clarin.eu:cr1:c_1758888743557" ConceptLink="https://schema.org/CreativeWork" CardinalityMin="1" CardinalityMax="1">
-                <Documentation>https://personsincontext.org/model/#ArchiveComponent</Documentation>
-                <Element name="name" ConceptLink="https://schema.org/name" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
-                    <Documentation>The name of the item. (Also used for titles).</Documentation>
-                </Element>
-            </Component>
-        </Component>
-    </Component>
+	<Header>
+		<ID>clarin.eu:cr1:p_1758888743558</ID>
+		<Name>PersonReconstruction</Name>
+		<Description>This is a test profile for Person reconstructions according to the PiCo model. In general terms, this means a "person" who has been already confirmed to be an existing individual.</Description>
+		<Status>development</Status>
+	</Header>
+	<Component name="PersonReconstruction" ConceptLink="https://personsincontext.org/model#PersonReconstruction" CardinalityMin="1" CardinalityMax="1">
+		<Documentation>A Person reconstruction is the result of modelling one or multiple PersonObservation(s) into a single resource.</Documentation>
+		<Component name="PersonName" ComponentRef="clarin.eu:cr1:c_1761816151561" CardinalityMin="1" CardinalityMax="1">
+			<Element name="fullName" ConceptLink="https://w3id.org/pnv#literalName" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+				<Documentation>Literal name designates a full personal name. This property may only be left blank if a person's name was unknown or if a person was unnamed (e.g. a child that died shortly after being born), in which cases the property pnv:nameSpecification should state "unknown" or "unnamed". (Note -not in PiCo-: if you are entering the name of a person observation, use this element to enter the name as it appears in the source.</Documentation>
+			</Element>
+			<Element name="givenName" ConceptLink="https://w3id.org/pnv#givenName" ValueScheme="string" CardinalityMin="0" CardinalityMax="1">
+				<Documentation>A Given name designates the name(s) given to someone at birth or any other name-giving event. In the U.S., the first name of a Person.</Documentation>
+			</Element>
+			<Element name="familyName" ConceptLink="https://schema.org/familyName" ValueScheme="string" CardinalityMin="0" CardinalityMax="1">
+				<Documentation>Family name. In the U.S., the last name of a Person.</Documentation>
+			</Element>
+		</Component>
+		<Component name="BirthDate" ConceptLink="https://schema.org/birthDate" CardinalityMin="1" CardinalityMax="1">
+			<Component name="Date" ComponentRef="clarin.eu:cr1:c_1761816151565" CardinalityMin="1" CardinalityMax="1">
+				<Documentation>Standard: https://knaw.sharepoint.com/:b:/r/sites/PRJ-DRE-Joegoslavie/Gedeelde%20documenten/General/DRE%20Database%20-%20shared%20with%20HuC/NEN-ISO%208601-2_2019%20en%20(1).pdf?csf=1&amp;web=1&amp;e=ZENSyh</Documentation>
+				<Element name="dateObservation" ValueScheme="string" CardinalityMin="1" CardinalityMax="1">
+					<Documentation>Write the date as it is written in the historical source (transcribe it; e.g.,   XIIII Kalend. Novembris)</Documentation>
+				</Element>
+				<Element name="dateStart" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+					<Documentation>Use this field to enter a date or the beginning of a date range (or the date if there is no date range). Select from the calendar. Adapt if necessary following this pattern: YYYY-MM-DD. If there are uncertainties, use these two uncertainty patterns (here with an example): PATTERN1: 2025-??-17 (use "?" to replace uncertain values, here the day is known to be the 17th, the year is 2025 but the month is unknown). PATTERN2: ~2025-~07 (use "~" to indicate approximate values, here it means that both the year and the month are approximate values). COMBINED example: ~2025-??-17.</Documentation>
+				</Element>
+				<Element name="dateEnd" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+					<Documentation>Use this field to enter the end date in a range. Follow the same instructions as for dateStart.</Documentation>
+				</Element>
+				<Element name="calendar" CardinalityMin="1" CardinalityMax="1">
+					<ValueScheme>
+						<Vocabulary>
+							<enumeration>
+								<item>Gregorian</item>
+								<item> Julian (1 January year start)</item>
+								<item>Julian (25 March year start)</item>
+								<item>Unknown</item>
+							</enumeration>
+						</Vocabulary>
+					</ValueScheme>
+				</Element>
+				<Element name="noteDate" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" cue:DisplayPriority="3" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+					<Documentation>:Add any clarifying notes related to the dates. These notes may be for internal or external use (t.b.d.)</Documentation>
+				</Element>
+			</Component>
+		</Component>
+		<Component name="DeathDate" ConceptLink="https://schema.org/deathDate" CardinalityMin="1" CardinalityMax="1">
+			<Component name="Date" ComponentRef="clarin.eu:cr1:c_1761816151565" CardinalityMin="1" CardinalityMax="1">
+				<Documentation>Standard: https://knaw.sharepoint.com/:b:/r/sites/PRJ-DRE-Joegoslavie/Gedeelde%20documenten/General/DRE%20Database%20-%20shared%20with%20HuC/NEN-ISO%208601-2_2019%20en%20(1).pdf?csf=1&amp;web=1&amp;e=ZENSyh</Documentation>
+				<Element name="dateObservation" ValueScheme="string" CardinalityMin="1" CardinalityMax="1">
+					<Documentation>Write the date as it is written in the historical source (transcribe it; e.g.,   XIIII Kalend. Novembris)</Documentation>
+				</Element>
+				<Element name="dateStart" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+					<Documentation>Use this field to enter a date or the beginning of a date range (or the date if there is no date range). Select from the calendar. Adapt if necessary following this pattern: YYYY-MM-DD. If there are uncertainties, use these two uncertainty patterns (here with an example): PATTERN1: 2025-??-17 (use "?" to replace uncertain values, here the day is known to be the 17th, the year is 2025 but the month is unknown). PATTERN2: ~2025-~07 (use "~" to indicate approximate values, here it means that both the year and the month are approximate values). COMBINED example: ~2025-??-17.</Documentation>
+				</Element>
+				<Element name="dateEnd" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+					<Documentation>Use this field to enter the end date in a range. Follow the same instructions as for dateStart.</Documentation>
+				</Element>
+				<Element name="calendar" CardinalityMin="1" CardinalityMax="1">
+					<ValueScheme>
+						<Vocabulary>
+							<enumeration>
+								<item>Gregorian</item>
+								<item> Julian (1 January year start)</item>
+								<item>Julian (25 March year start)</item>
+								<item>Unknown</item>
+							</enumeration>
+						</Vocabulary>
+					</ValueScheme>
+				</Element>
+				<Element name="noteDate" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" cue:DisplayPriority="3" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+					<Documentation>:Add any clarifying notes related to the dates. These notes may be for internal or external use (t.b.d.)</Documentation>
+				</Element>
+			</Component>
+		</Component>
+	</Component>
 </ComponentSpec>
