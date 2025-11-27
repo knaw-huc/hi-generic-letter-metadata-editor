@@ -3,25 +3,25 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:math="http://www.w3.org/2005/xpath-functions/math"
     xmlns:csv="https://di.huc.knaw.nl/ns/csv"
-    xmlns:cmd="http://www.clarin.eu/cmd/1"
-    xmlns:cmdp="http://www.clarin.eu/cmd/1/profiles/clarin.eu:cr1:p_1761816151556"
-    exclude-result-prefixes="xs math"
+    exclude-result-prefixes="xs math csv"
     version="3.0">
     
     <xsl:import href="csv2xml.xsl"/>
     
-    <xsl:param name="csv" select="'letters.csv'"/>
+    <xsl:param name="csv" select="'letters.csv'"/>    
+    <xsl:param name="user" select="'old_books'"/>
+    <xsl:param name="out" select="'./output'"></xsl:param>
     
     <xsl:template name="main">
         <xsl:for-each select="csv:getCSV($csv)//r">
             <xsl:variable name="r" select="."/>
-            <xsl:result-document href="output/record-{number($r/@l) - 1}.xml" expand-text="yes">
+            <xsl:result-document href="{$out}/record-{number($r/@l) - 1}.xml" expand-text="yes">
                 <cmd:CMD xmlns:cmd="http://www.clarin.eu/cmd/1"
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:schemaLocation="http://www.clarin.eu/cmd/1 https://infra.clarin.eu/CMDI/1.x/xsd/cmd-envelop.xsd http://www.clarin.eu/cmd/1/profiles/clarin.eu:cr1:p_1761816151556 http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.2/profiles/clarin.eu:cr1:p_1761816151556/xsd"
                     CMDVersion="1.2">
                     <cmd:Header>
-                        <cmd:MdCreator>old_books</cmd:MdCreator>
+                        <cmd:MdCreator>{$user}</cmd:MdCreator>
                         <cmd:MdCreationDate>
                             <xsl:value-of select="format-date(current-date(),'[Y0001]-[M01]-[D01]')"/>
                         </cmd:MdCreationDate>
