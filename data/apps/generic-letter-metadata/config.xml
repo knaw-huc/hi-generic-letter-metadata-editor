@@ -36,6 +36,20 @@
           </nr>
         </list>
       </person>
+      <place>
+        <prof>clarin.eu:cr1:p_1761816151568</prof>
+        <label_en>place-reconstruction</label_en>
+        <label_plural_en>place-reconstructions</label_plural_en>
+        <title>string((//cmdp:authorisedForm[@xml:lang='en'],//cmdp:authorisedForm)[1])</title>
+        <list>
+          <nr>
+            <xpath>replace(//*:MdSelfLink,'unl://','')</xpath>
+            <label>nr</label>
+            <sort>true</sort>
+            <filter>true</filter>
+          </nr>
+        </list>
+      </place>
     </prof>
   </app>
 </config>
