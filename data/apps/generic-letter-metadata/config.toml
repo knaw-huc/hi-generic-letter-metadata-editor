@@ -61,3 +61,18 @@ filter="true"
 #label="levelOfDetail"
 #sort="true"
 #filter="'select'"
+
+# PLACE RECONSTRUCTIONS
+
+[app.prof.place]
+prof="clarin.eu:cr1:p_1761816151568"
+label_en="place-reconstruction"
+label_plural_en="place-reconstructions"
+title="string((//cmdp:authorisedForm[@xml:lang='en'],//cmdp:authorisedForm)[1])"
+#html="person-toHTML.xsl"
+
+[app.prof.place.list.nr]
+xpath="replace(//*:MdSelfLink,'unl://','')"
+label="nr"
+sort="true"
+filter="true"
