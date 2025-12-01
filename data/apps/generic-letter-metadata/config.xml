@@ -6,8 +6,9 @@
     <def_prof>clarin.eu:cr1:p_1761816151556</def_prof>
     <cmdi_version>1.2</cmdi_version>
     <access>
-      <read>any</read>
-      <write>any</write>
+      <users>./htp</users>
+      <read>users</read>
+      <write>users</write>
     </access>
     <prof>
       <letter>

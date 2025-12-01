@@ -6,9 +6,9 @@ def_prof="clarin.eu:cr1:p_1761816151556"
 cmdi_version="1.2"
 
 [app.access]
-#users="./htp.test" # location of the htpassword file, i.e. the "users" and "owner"
-read="any" # or "users" or "owner"
-write="any" # or "users" or "owner"
+users="./htp" # location of the htpassword file, i.e. the "users" and "owner"
+read="users" # or "users" or "owner"
+write="users" # or "users" or "owner"
 
 [app.prof.letter]
 prof="clarin.eu:cr1:p_1761816151556"
