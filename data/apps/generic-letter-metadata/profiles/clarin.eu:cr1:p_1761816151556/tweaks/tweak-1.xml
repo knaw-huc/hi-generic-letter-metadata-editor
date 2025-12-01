@@ -10,17 +10,15 @@
 		<Component name="Identifier">
 			<Documentation>A unique identifier of the resource being described or cataloged. Usage note: The identifier is a text string which is assigned to the resource to provide an unambiguous reference within a particular context. The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. </Documentation>
 			<Element name="identifierType">
-				
 			</Element>
-			<Element name="labelOrNotation">
+			<Element name="identifierLabel">
 				<Documentation>Add the preferred label for this identifier.</Documentation>
 			</Element>
-			<Element name="url">
+			<Element name="identifierUrl">
 				<Documentation>The complete URL if the identifier has a web locator. If it is OpenStreetMaps: Enter the URI from OpenStreetMap API. You can search directly in OpenStreetMaps and paste the URI here. The URI has to have this format, for example: https://www.openstreetmap.org/relation/214885 (note the type in the middle: relation, node, way)</Documentation>
 			</Element>
-			<Element name="sourceUrl">
-				<Documentation>The name of the external source/knowledge base used to get the identifier. </Documentation>
-				
+			<Element name="schemeAgency">
+				<Documentation>The name of the external source/knowledge base used to get the identifier. </Documentation>				
 			</Element>
 		</Component>
 		<Component name="SourceBasicMetadata">
@@ -29,7 +27,6 @@
 			</Element>
 			<Element name="additionalType">
 				<Documentation>Recommendation for vocabularies to use: https://www.w3.org/TR/vocab-dcat-3/#Property:resource_type. You can use a term from the PiCo thesaurus for Source types: https://terms.personsincontext.org/sourcetypes . (Internal note: this property is equivalent as this one in PiCo: https://schema.org/additionalType).</Documentation>
-				
 			</Element>
 			<Element name="accessURL">
 				<Documentation>A URL of the resource that gives access to it. In PiCo: A media object, usually a scan, that encodes the Source of a Person observation (https://schema.org/associatedMedia).</Documentation>
@@ -43,22 +40,22 @@
 			<Element name="zoteroGroupItemLink">
 				<Documentation>Add here the link to the item in the Zotero group: 1) go to https://www.zotero.org/groups/6097405/ecodicesnl. 2) Right-click on the item and select the option "copy link". 3) Paste the link here. Here's an example item URL: https://www.zotero.org/groups/4804340/hereyourgroupname/items/EQ2D34GW</Documentation>
 			</Element>
+			<Element name="pageRange"><!--cues--></Element>
+			<Element name="notesSource"><!--cues--></Element>
 			<Component name="Keywords">
 				<Documentation>Add as many keywords as wanted, making sure they have URIs.</Documentation>
 				<Component name="Identifier">
 					<Documentation>A unique identifier of the resource being described or cataloged. Usage note: The identifier is a text string which is assigned to the resource to provide an unambiguous reference within a particular context. The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. </Documentation>
 					<Element name="identifierType">
-						
 					</Element>
-					<Element name="labelOrNotation">
+					<Element name="identifierLabel">
 						<Documentation>Add the preferred label for this identifier.</Documentation>
 					</Element>
-					<Element name="url">
+					<Element name="identifierUrl">
 						<Documentation>The complete URL if the identifier has a web locator. If it is OpenStreetMaps: Enter the URI from OpenStreetMap API. You can search directly in OpenStreetMaps and paste the URI here. The URI has to have this format, for example: https://www.openstreetmap.org/relation/214885 (note the type in the middle: relation, node, way)</Documentation>
 					</Element>
-					<Element name="sourceUrl">
+					<Element name="schemeAgency">
 						<Documentation>The name of the external source/knowledge base used to get the identifier. </Documentation>
-						
 					</Element>
 				</Component>
 			</Component>
@@ -67,7 +64,6 @@
 			<Documentation>Container class for Person observation and Person reconstruction.</Documentation>
 			<Element name="correspondenceAction">
 				<Documentation>This class comprises the activities making up processes of correspondence items involving at least two persons. This class and its subclasses have been adapted from the TEI standard for correspondences, specifically drawing from the correspAction element.</Documentation>
-				
 			</Element>
 			<Component name="PersonObservation">
 				<Documentation>https://personsincontext.org/model/#PersonObservation</Documentation>
@@ -77,14 +73,15 @@
 				<Component name="Confidence">
 					<Element name="confidenceValue">
 						<Documentation>How confident you (or an algorithm) are of an observation (what you observed (read) in the source), or of a reconstruction. Reflect the uncertainties and ambiguities of the inferred observation (or reconstruction) by choosing one of the values.</Documentation>
-						
 					</Element>
 					<Element name="confidenceScore"><!--cues--></Element>
 				</Component>
 			</Component>
 			<Component name="LinkToReconstruction">
 				<Component name="Relationship">
-					<Element name="to"><!--cues--></Element>
+					<Element name="to" cue:class="skosType">
+						<clariah:autoCompleteURI>/app/generic-letter-metadata/profile/clarin.eu:cr1:p_1758888743558/entity/person</clariah:autoCompleteURI>
+					</Element>
 					<Element name="category">
 						<Documentation>Type of relationship.</Documentation>
 					</Element>
@@ -97,6 +94,9 @@
 				</Component>
 				<Component name="ReconstructionActivity">
 					<Documentation>The Activity that generated a PersonReconstruction. A Person Reconstruction can either be created by a human researcher or by a software algorithm. In case of a human-made reconstruction, provide information about the time, place and knowledge- input. In case of a software algorithm, provide information about the name, version and configuration settings of the program. </Documentation>
+					<Element name="typeActivity">
+						<Documentation>Register which type of activity was used to make the reconstruction (not from PiCo, t.b.d.)</Documentation>
+					</Element>
 					<Element name="agent">
 						<Documentation>The agent (person or organisation) that is responsible for the creation of a person reconstruction.</Documentation>
 					</Element>
@@ -111,7 +111,6 @@
 				<Component name="Confidence">
 					<Element name="confidenceValue">
 						<Documentation>How confident you (or an algorithm) are of an observation (what you observed (read) in the source), or of a reconstruction. Reflect the uncertainties and ambiguities of the inferred observation (or reconstruction) by choosing one of the values.</Documentation>
-						
 					</Element>
 					<Element name="confidenceScore"><!--cues--></Element>
 				</Component>
@@ -121,7 +120,6 @@
 			<Documentation>Container class for Person observation and Person reconstruction.</Documentation>
 			<Element name="correspondenceAction">
 				<Documentation>This class comprises the activities making up processes of correspondence items involving at least two persons. This class and its subclasses have been adapted from the TEI standard for correspondences, specifically drawing from the correspAction element.</Documentation>
-				
 			</Element>
 			<Component name="PersonObservation">
 				<Documentation>https://personsincontext.org/model/#PersonObservation</Documentation>
@@ -131,14 +129,15 @@
 				<Component name="Confidence">
 					<Element name="confidenceValue">
 						<Documentation>How confident you (or an algorithm) are of an observation (what you observed (read) in the source), or of a reconstruction. Reflect the uncertainties and ambiguities of the inferred observation (or reconstruction) by choosing one of the values.</Documentation>
-						
 					</Element>
 					<Element name="confidenceScore"><!--cues--></Element>
 				</Component>
 			</Component>
 			<Component name="LinkToReconstruction">
 				<Component name="Relationship">
-					<Element name="to"><!--cues--></Element>
+					<Element name="to" cue:class="skosType">
+						<clariah:autoCompleteURI>/app/generic-letter-metadata/profile/clarin.eu:cr1:p_1758888743558/entity/person</clariah:autoCompleteURI>
+					</Element>
 					<Element name="category">
 						<Documentation>Type of relationship.</Documentation>
 					</Element>
@@ -151,6 +150,9 @@
 				</Component>
 				<Component name="ReconstructionActivity">
 					<Documentation>The Activity that generated a PersonReconstruction. A Person Reconstruction can either be created by a human researcher or by a software algorithm. In case of a human-made reconstruction, provide information about the time, place and knowledge- input. In case of a software algorithm, provide information about the name, version and configuration settings of the program. </Documentation>
+					<Element name="typeActivity">
+						<Documentation>Register which type of activity was used to make the reconstruction (not from PiCo, t.b.d.)</Documentation>
+					</Element>
 					<Element name="agent">
 						<Documentation>The agent (person or organisation) that is responsible for the creation of a person reconstruction.</Documentation>
 					</Element>
@@ -165,7 +167,6 @@
 				<Component name="Confidence">
 					<Element name="confidenceValue">
 						<Documentation>How confident you (or an algorithm) are of an observation (what you observed (read) in the source), or of a reconstruction. Reflect the uncertainties and ambiguities of the inferred observation (or reconstruction) by choosing one of the values.</Documentation>
-						
 					</Element>
 					<Element name="confidenceScore"><!--cues--></Element>
 				</Component>
@@ -174,7 +175,6 @@
 		<Component name="PlaceSent">
 			<Element name="correspondenceAction">
 				<Documentation>This class comprises the activities making up processes of correspondence items involving at least two persons. This class and its subclasses have been adapted from the TEI standard for correspondences, specifically drawing from the correspAction element.</Documentation>
-				
 			</Element>
 			<Component name="PlaceObservation">
 				<Element name="placeAsText">
@@ -183,7 +183,6 @@
 				<Component name="Confidence">
 					<Element name="confidenceValue">
 						<Documentation>How confident you (or an algorithm) are of an observation (what you observed (read) in the source), or of a reconstruction. Reflect the uncertainties and ambiguities of the inferred observation (or reconstruction) by choosing one of the values.</Documentation>
-						
 					</Element>
 					<Element name="confidenceScore"><!--cues--></Element>
 				</Component>
@@ -203,6 +202,9 @@
 				</Component>
 				<Component name="ReconstructionActivity">
 					<Documentation>The Activity that generated a PersonReconstruction. A Person Reconstruction can either be created by a human researcher or by a software algorithm. In case of a human-made reconstruction, provide information about the time, place and knowledge- input. In case of a software algorithm, provide information about the name, version and configuration settings of the program. </Documentation>
+					<Element name="typeActivity">
+						<Documentation>Register which type of activity was used to make the reconstruction (not from PiCo, t.b.d.)</Documentation>
+					</Element>
 					<Element name="agent">
 						<Documentation>The agent (person or organisation) that is responsible for the creation of a person reconstruction.</Documentation>
 					</Element>
@@ -216,8 +218,7 @@
 				</Component>
 				<Component name="Confidence">
 					<Element name="confidenceValue">
-						<Documentation>How confident you (or an algorithm) are of an observation (what you observed (read) in the source), or of a reconstruction. Reflect the uncertainties and ambiguities of the inferred observation (or reconstruction) by choosing one of the values.</Documentation>
-						
+						<Documentation>How confident you (or an algorithm) are of an observation (what you observed (read) in the source), or of a reconstruction. Reflect the uncertainties and ambiguities of the inferred observation (or reconstruction) by choosing one of the values.</Documentation>	
 					</Element>
 					<Element name="confidenceScore"><!--cues--></Element>
 				</Component>
@@ -226,7 +227,6 @@
 		<Component name="PlaceReceived">
 			<Element name="correspondenceAction">
 				<Documentation>This class comprises the activities making up processes of correspondence items involving at least two persons. This class and its subclasses have been adapted from the TEI standard for correspondences, specifically drawing from the correspAction element.</Documentation>
-				
 			</Element>
 		</Component>
 		<Component name="DateSent">
@@ -241,7 +241,6 @@
 				<Component name="Confidence">
 					<Element name="confidenceValue">
 						<Documentation>How confident you (or an algorithm) are of an observation (what you observed (read) in the source), or of a reconstruction. Reflect the uncertainties and ambiguities of the inferred observation (or reconstruction) by choosing one of the values.</Documentation>
-						
 					</Element>
 					<Element name="confidenceScore"><!--cues--></Element>
 				</Component>
@@ -263,7 +262,6 @@
 				<Component name="Confidence">
 					<Element name="confidenceValue">
 						<Documentation>How confident you (or an algorithm) are of an observation (what you observed (read) in the source), or of a reconstruction. Reflect the uncertainties and ambiguities of the inferred observation (or reconstruction) by choosing one of the values.</Documentation>
-						
 					</Element>
 					<Element name="confidenceScore"><!--cues--></Element>
 				</Component>
@@ -282,7 +280,6 @@
 				<Component name="Confidence">
 					<Element name="confidenceValue">
 						<Documentation>How confident you (or an algorithm) are of an observation (what you observed (read) in the source), or of a reconstruction. Reflect the uncertainties and ambiguities of the inferred observation (or reconstruction) by choosing one of the values.</Documentation>
-						
 					</Element>
 					<Element name="confidenceScore"><!--cues--></Element>
 				</Component>
@@ -304,7 +301,6 @@
 				<Component name="Confidence">
 					<Element name="confidenceValue">
 						<Documentation>How confident you (or an algorithm) are of an observation (what you observed (read) in the source), or of a reconstruction. Reflect the uncertainties and ambiguities of the inferred observation (or reconstruction) by choosing one of the values.</Documentation>
-						
 					</Element>
 					<Element name="confidenceScore"><!--cues--></Element>
 				</Component>
