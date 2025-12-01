@@ -10,18 +10,34 @@ cmdi_version="1.2"
 read="any" # or "users" or "owner"
 write="any" # or "users" or "owner"
 
-# LETTERS
-[app.prof.generic-letter-metadata]
+[app.prof.letter]
 prof="clarin.eu:cr1:p_1761816151556"
 title="string((/cmd:CMD/cmd:Components//cmdp:*[empty(cmdp:*)][normalize-space(text())!=''])[1])"
 
-[app.prof.generic-letter-metadata.list]
+# LETTERS
+[app.prof.letter.list.nr]
+xpath="replace(//*:MdSelfLink,'unl://','')"
+label="nr"
+sort="true"
+filter="true"
         
-[app.prof.generic-letter-metadata.list.first]
-xpath="string((/cmd:CMD/cmd:Components//cmdp:*[empty(cmdp:*)][normalize-space(text())!=''])[1])"
-label="First"
+[app.prof.letter.list.first]
+xpath="string((/cmd:CMD/cmd:Components//cmdp:*[empty(cmdp:*)][normalize-space(text())!=''])[2])"
+label="NodegoatId"
 sort="true"# or "false"
 filter="true"# or "'select'"
+
+[app.prof.letter.list.title]
+xpath="string(//cmdp:SourceBasicMetadata/cmdp:nameOrTitle)"
+label="Letter title"
+sort="true"
+filter="true"
+
+[app.prof.letter.list.sender]
+xpath="string(//cmdp:Sender/cmdp:PersonObservation/cmdp:personAsText)"
+label="SenderName"
+sort="true"
+filter="'select'"
 
 # PERSON RECONSTRUCTIONS
 
@@ -29,7 +45,7 @@ filter="true"# or "'select'"
 prof="clarin.eu:cr1:p_1758888743558"
 label_en="person-reconstruction"
 label_plural_en="person-reconstructions"
-title="string((//cmdp:authorisedForm[@xml:lang='en'],//cmdp:authorisedForm)[1])"
+title="string(//cmdp:fullName[@xml:lang='en'],//cmdp:fullName)[1])"
 #html="person-toHTML.xsl"
 
 [app.prof.person.list.nr]
@@ -38,11 +54,11 @@ label="nr"
 sort="true"
 filter="true"
 
-#[app.prof.person.list.name]
-#xpath="string((//cmdp:authorisedForm[@xml:lang='en'],//cmdp:authorisedForm)[1])"
-#label="authorised form"
-#sort="true"
-#filter="true"
+[app.prof.person.list.name]
+xpath="string((//cmdp:fullName[@xml:lang='en'],//cmdp:fullName)[1])"
+label="full name"
+sort="true"
+filter="true"
 #
 ##[app.prof.person.list.type]
 ##xpath="string(//cmdp:Identification/cmdp:type)"
@@ -56,11 +72,17 @@ filter="true"
 #sort="true"
 #filter="'select'"
 #
-#[app.prof.person.list.levelOfDetail]
-#xpath="string(//cmdp:ControlArea/cmdp:levelOfDetail)"
-#label="levelOfDetail"
+#[app.prof.person.list.identifier1]
+#xpath="string((//cmdp:identifierType[@xml:lang='en'],//cmdp:identifierLabel)[1])"
+#label="LocalId"
 #sort="true"
 #filter="'select'"
+
+[app.prof.person.list.identifier2]
+xpath="string((//cmdp:identifierType[@xml:lang='en'],//cmdp:identifierLabel)[2])"
+label="WikidataId"
+sort="true"
+filter="'select'"
 
 # PLACE RECONSTRUCTIONS
 
