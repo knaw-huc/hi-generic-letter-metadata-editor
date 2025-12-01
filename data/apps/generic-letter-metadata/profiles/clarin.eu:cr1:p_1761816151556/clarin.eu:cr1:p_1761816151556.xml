@@ -20,13 +20,13 @@
 					</Vocabulary>
 				</ValueScheme>
 			</Element>
-			<Element name="labelOrNotation" ConceptLink="http://www.w3.org/2000/01/rdf-schema#label" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+			<Element name="identifierLabel" ConceptLink="http://purl.org/dc/terms/identifier" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 				<Documentation>Add the preferred label for this identifier.</Documentation>
 			</Element>
-			<Element name="url" ConceptLink="http://purl.org/dc/terms/identifier" ValueScheme="anyURI" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+			<Element name="identifierUrl" ConceptLink="http://purl.org/dc/terms/identifier" ValueScheme="anyURI" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 				<Documentation>The complete URL if the identifier has a web locator. If it is OpenStreetMaps: Enter the URI from OpenStreetMap API. You can search directly in OpenStreetMaps and paste the URI here. The URI has to have this format, for example: https://www.openstreetmap.org/relation/214885 (note the type in the middle: relation, node, way)</Documentation>
 			</Element>
-			<Element name="sourceUrl" ConceptLink="http://purl.org/dc/terms/source" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="3" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+			<Element name="schemeAgency" ConceptLink="http://www.w3.org/ns/adms#schemeAgency" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="3" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 				<Documentation>The name of the external source/knowledge base used to get the identifier. </Documentation>
 				<ValueScheme>
 					<Vocabulary>
@@ -34,8 +34,9 @@
 							<item ConceptLink="https://viaf.org" AppInfo="Virtual International Authority File">VIAF</item>
 							<item ConceptLink="https://www.wikidata.org" AppInfo="">Wikidata</item>
 							<item ConceptLink="https://www.openstreetmap.org/relation" AppInfo="">OpenStreetMaps</item>
-							<item>EMLO</item>
-							<item>CERL</item>
+							<item ConceptLink="" AppInfo="">EMLO</item>
+							<item ConceptLink="" AppInfo="">CERL</item>
+							<item ConceptLink="" AppInfo="">NODEGOAT</item>
 						</enumeration>
 					</Vocabulary>
 				</ValueScheme>
@@ -67,6 +68,8 @@
 			<Element name="zoteroGroupItemLink" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" cue:DisplayPriority="4" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 				<Documentation>Add here the link to the item in the Zotero group: 1) go to https://www.zotero.org/groups/6097405/ecodicesnl. 2) Right-click on the item and select the option "copy link". 3) Paste the link here. Here's an example item URL: https://www.zotero.org/groups/4804340/hereyourgroupname/items/EQ2D34GW</Documentation>
 			</Element>
+			<Element name="pageRange" ValueScheme="string" CardinalityMin="0" CardinalityMax="1"/>
+			<Element name="notesSource" ValueScheme="string" CardinalityMin="0" CardinalityMax="1"/>
 			<Component name="Keywords" ComponentRef="clarin.eu:cr1:c_1761816151570" ConceptLink="http://www.w3.org/ns/dcat#resource_keyword" CardinalityMin="1" CardinalityMax="1">
 				<Documentation>Add as many keywords as wanted, making sure they have URIs.</Documentation>
 				<Component name="Identifier" ComponentRef="clarin.eu:cr1:c_1761816151559" ConceptLink="http://purl.org/dc/terms/identifier" CardinalityMin="1" CardinalityMax="unbounded">
@@ -81,13 +84,13 @@
 							</Vocabulary>
 						</ValueScheme>
 					</Element>
-					<Element name="labelOrNotation" ConceptLink="http://www.w3.org/2000/01/rdf-schema#label" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+					<Element name="identifierLabel" ConceptLink="http://purl.org/dc/terms/identifier" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 						<Documentation>Add the preferred label for this identifier.</Documentation>
 					</Element>
-					<Element name="url" ConceptLink="http://purl.org/dc/terms/identifier" ValueScheme="anyURI" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+					<Element name="identifierUrl" ConceptLink="http://purl.org/dc/terms/identifier" ValueScheme="anyURI" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 						<Documentation>The complete URL if the identifier has a web locator. If it is OpenStreetMaps: Enter the URI from OpenStreetMap API. You can search directly in OpenStreetMaps and paste the URI here. The URI has to have this format, for example: https://www.openstreetmap.org/relation/214885 (note the type in the middle: relation, node, way)</Documentation>
 					</Element>
-					<Element name="sourceUrl" ConceptLink="http://purl.org/dc/terms/source" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="3" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+					<Element name="schemeAgency" ConceptLink="http://www.w3.org/ns/adms#schemeAgency" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="3" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 						<Documentation>The name of the external source/knowledge base used to get the identifier. </Documentation>
 						<ValueScheme>
 							<Vocabulary>
@@ -95,8 +98,9 @@
 									<item ConceptLink="https://viaf.org" AppInfo="Virtual International Authority File">VIAF</item>
 									<item ConceptLink="https://www.wikidata.org" AppInfo="">Wikidata</item>
 									<item ConceptLink="https://www.openstreetmap.org/relation" AppInfo="">OpenStreetMaps</item>
-									<item>EMLO</item>
-									<item>CERL</item>
+									<item ConceptLink="" AppInfo="">EMLO</item>
+									<item ConceptLink="" AppInfo="">CERL</item>
+									<item ConceptLink="" AppInfo="">NODEGOAT</item>
 								</enumeration>
 							</Vocabulary>
 						</ValueScheme>
