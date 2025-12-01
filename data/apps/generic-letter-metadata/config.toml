@@ -45,7 +45,7 @@ filter="'select'"
 prof="clarin.eu:cr1:p_1758888743558"
 label_en="person-reconstruction"
 label_plural_en="person-reconstructions"
-title="string(//cmdp:fullName[@xml:lang='en'],//cmdp:fullName)[1])"
+title="string((//cmdp:fullName[@xml:lang='en'],//cmdp:fullName)[1])"
 #html="person-toHTML.xsl"
 
 [app.prof.person.list.nr]
