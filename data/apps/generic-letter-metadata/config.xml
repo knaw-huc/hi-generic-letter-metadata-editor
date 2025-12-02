@@ -22,23 +22,29 @@
             <filter>true</filter>
           </nr>
           <first>
-            <xpath>string((/cmd:CMD/cmd:Components//cmdp:*[empty(cmdp:*)][normalize-space(text())!=''])[2])</xpath>
+            <xpath>string((/cmd:CMD/cmd:Components//cmdp:*[empty(cmdp:*)][normalize-space(text())!=''])[1])</xpath>
             <label>NodegoatId</label>
             <sort>true</sort>
             <filter>true</filter>
           </first>
-          <title>
-            <xpath>string(//cmdp:SourceBasicMetadata/cmdp:nameOrTitle)</xpath>
-            <label>Letter title</label>
-            <sort>true</sort>
-            <filter>true</filter>
-          </title>
           <sender>
-            <xpath>string(//cmdp:Sender/cmdp:PersonObservation/cmdp:personAsText)</xpath>
-            <label>SenderName</label>
+            <xpath>string(//cmdp:Sender/cmdp:SenderObservation/cmdp:senderAsText)</xpath>
+            <label>SenderNameAsWritten</label>
             <sort>true</sort>
             <filter>'select'</filter>
           </sender>
+          <receiver>
+            <xpath>string(//cmdp:Receiver/cmdp:ReceiverObservation/cmdp:receiverAsText)</xpath>
+            <label>ReceiverNameAsWritten</label>
+            <sort>true</sort>
+            <filter>'select'</filter>
+          </receiver>
+          <letterDate>
+            <xpath>string(//cmdp:DateSent/cmdp:DateObservation/cmdp:dateAsWritten)</xpath>
+            <label>DateSent</label>
+            <sort>true</sort>
+            <filter>'select'</filter>
+          </letterDate>
         </list>
       </letter>
       <person>
@@ -59,6 +65,18 @@
             <sort>true</sort>
             <filter>true</filter>
           </name>
+          <dateBirth>
+            <xpath>string(//cmdp:PersonData/cmdp:BirthDate/cmdp:DateReconstruction/cmdp:dateStart)</xpath>
+            <label>DateBirth</label>
+            <sort>true</sort>
+            <filter>'select'</filter>
+          </dateBirth>
+          <dateDeath>
+            <xpath>string(//cmdp:PersonData/cmdp:DeathDate/cmdp:DateReconstruction/cmdp:dateStart)</xpath>
+            <label>DateDeath</label>
+            <sort>true</sort>
+            <filter>'select'</filter>
+          </dateDeath>
           <identifier2>
             <xpath>string((//cmdp:identifierType[@xml:lang='en'],//cmdp:identifierLabel)[2])</xpath>
             <label>WikidataId</label>

@@ -22,20 +22,32 @@ sort="true"
 filter="true"
         
 [app.prof.letter.list.first]
-xpath="string((/cmd:CMD/cmd:Components//cmdp:*[empty(cmdp:*)][normalize-space(text())!=''])[2])"
+xpath="string((/cmd:CMD/cmd:Components//cmdp:*[empty(cmdp:*)][normalize-space(text())!=''])[1])"
 label="NodegoatId"
 sort="true"# or "false"
 filter="true"# or "'select'"
 
-[app.prof.letter.list.title]
-xpath="string(//cmdp:SourceBasicMetadata/cmdp:nameOrTitle)"
-label="Letter title"
-sort="true"
-filter="true"
+#[app.prof.letter.list.title]
+#xpath="string(//cmdp:SourceBasicMetadata/cmdp:nameOrTitle)"
+#label="Letter title"
+#sort="true"
+#filter="true"
 
 [app.prof.letter.list.sender]
-xpath="string(//cmdp:Sender/cmdp:PersonObservation/cmdp:personAsText)"
-label="SenderName"
+xpath="string(//cmdp:Sender/cmdp:SenderObservation/cmdp:senderAsText)"
+label="SenderNameAsWritten"
+sort="true"
+filter="'select'"
+
+[app.prof.letter.list.receiver]
+xpath="string(//cmdp:Receiver/cmdp:ReceiverObservation/cmdp:receiverAsText)"
+label="ReceiverNameAsWritten"
+sort="true"
+filter="'select'"
+
+[app.prof.letter.list.letterDate]
+xpath="string(//cmdp:DateSent/cmdp:DateObservation/cmdp:dateAsWritten)"
+label="DateSent"
 sort="true"
 filter="'select'"
 
@@ -59,6 +71,18 @@ xpath="string((//cmdp:fullName[@xml:lang='en'],//cmdp:fullName)[1])"
 label="full name"
 sort="true"
 filter="true"
+
+[app.prof.person.list.dateBirth]
+xpath="string(//cmdp:PersonData/cmdp:BirthDate/cmdp:DateReconstruction/cmdp:dateStart)"
+label="DateBirth"
+sort="true"
+filter="'select'"
+
+[app.prof.person.list.dateDeath]
+xpath="string(//cmdp:PersonData/cmdp:DeathDate/cmdp:DateReconstruction/cmdp:dateStart)"
+label="DateDeath"
+sort="true"
+filter="'select'"
 #
 ##[app.prof.person.list.type]
 ##xpath="string(//cmdp:Identification/cmdp:type)"
