@@ -5,13 +5,13 @@
     xmlns:csv="https://di.huc.knaw.nl/ns/csv"
     exclude-result-prefixes="xs math csv"
     version="3.0">
-    
+
     <xsl:import href="csv2xml.xsl"/>
-    
-    <xsl:param name="csv" select="'letters.csv'"/>    
+
+    <xsl:param name="csv" select="'letters.csv'"/>
     <xsl:param name="user" select="'Liliana'"/>
     <xsl:param name="out" select="'./output'"></xsl:param>
-    
+
     <xsl:template name="main">
         <xsl:for-each select="csv:getCSV($csv)//r">
             <xsl:variable name="r" select="."/>
@@ -38,46 +38,52 @@
                     <cmd:Components>
                         <cmdp:Letter xmlns:cmdp="http://www.clarin.eu/cmd/1/profiles/clarin.eu:cr1:p_1761816151556">
                             <cmdp:Identifier>
-                                <cmdp:identifierType>"Local-identifier"</cmdp:identifierType>
-                                <cmdp:identifierLabel>{normalize-space($r/c[@n='nodegoatID'])}</cmdp:identifierLabel>
-                                <cmdp:schemeAgency>"NODEGOAT"</cmdp:schemeAgency>
+                                <cmdp:identifier>{normalize-space($r/c[@n='nodegoatID'])}</cmdp:identifier>
+                                <cmdp:holdingInstitution>NODEGOAT</cmdp:holdingInstitution>
                             </cmdp:Identifier>
                             <cmdp:Identifier>
-                                <cmdp:identifierType>"Local-identifier"</cmdp:identifierType>                                
-                                <cmdp:labelOrNotation>{normalize-space($r/c[@n='shelfmark'])}</cmdp:labelOrNotation>
-                                <cmdp:sourceUrl>"UBU: Utrecht University Library"</cmdp:sourceUrl>                                
-                            </cmdp:Identifier>                            
+                                <cmdp:identifier>{normalize-space($r/c[@n='shelfmark'])}</cmdp:identifier>
+                                <cmdp:holdingInstitution>Utrecht University Library</cmdp:holdingInstitution>
+                            </cmdp:Identifier>
                             <cmdp:SourceBasicMetadata>
                                 <cmdp:nameOrTitle xml:lang="en">{normalize-space($r/c[@n='Letter-title'])}</cmdp:nameOrTitle>
-                                <cmdp:additionalType>"letter"</cmdp:additionalType>
-                                <cmdp:landingPage>"https://doi.org/10.24416/UU01-DZFKZX"</cmdp:landingPage>
+                                <cmdp:additionalType>letter</cmdp:additionalType>
+                                <cmdp:landingPage>https://doi.org/10.24416/UU01-DZFKZX</cmdp:landingPage>
                             </cmdp:SourceBasicMetadata>
                             <cmdp:Sender>
-                                <cmdp:correspondenceAction>"sending"</cmdp:correspondenceAction>
-                                <cmdp:PersonObservation>
-                                    <cmdp:personAsText>{normalize-space($r/c[@n='Sender'])}</cmdp:personAsText>
-                                </cmdp:PersonObservation>
+                                <cmdp:correspondenceAction>sending</cmdp:correspondenceAction>
+                                <cmdp:SenderObservation>
+                                    <cmdp:senderAsText>{normalize-space($r/c[@n='Sender'])}</cmdp:senderAsText>
+                                </cmdp:SenderObservation>
                                 <cmdp:LinkToReconstruction>
-                                    <cmdp:Relationship>
-                                        <cmdp:to>{($r/c[@n='relation-sender'])}</cmdp:to>
-                                    </cmdp:Relationship>
+                                    <cmdp:CuratedPersons>
+                                        <cmdp:normalizedName>{($r/c[@n='relation-sender'])}</cmdp:normalizedName>
+                                    </cmdp:CuratedPersons>
                                 </cmdp:LinkToReconstruction>
                             </cmdp:Sender>
                             <cmdp:Receiver>
-                                <cmdp:correspondenceAction>"receiving"</cmdp:correspondenceAction>
-                                <cmdp:PersonObservation>
-                                    <cmdp:personAsText>{normalize-space($r/c[@n='Recipient'])}</cmdp:personAsText>
-                                </cmdp:PersonObservation>
+                                <cmdp:correspondenceAction>receiving</cmdp:correspondenceAction>
+                                <cmdp:ReceiverObservation>
+                                    <cmdp:receiverAsText>{normalize-space($r/c[@n='Recipient'])}</cmdp:receiverAsText>
+                                </cmdp:ReceiverObservation>
                                 <cmdp:LinkToReconstruction>
-                                    <cmdp:Relationship>
-                                        <cmdp:to>{($r/c[@n='relation-recipient'])}</cmdp:to>
-                                    </cmdp:Relationship>
-                                </cmdp:LinkToReconstruction>                            </cmdp:Receiver>
+                                    <cmdp:CuratedPersons>
+                                        <cmdp:normalizedName>{($r/c[@n='relation-recipient'])}</cmdp:normalizedName>
+                                    </cmdp:CuratedPersons>
+                                </cmdp:LinkToReconstruction>                            
+                            </cmdp:Receiver>
+                            <cmdp:DateSent>
+                                <cmdp:DateObservation>
+                                    <cmdp:dateAsWritten>{($r/c[@n='Date'])}</cmdp:dateAsWritten>
+                                </cmdp:DateObservation>
+                                <cmdp:Confidence>
+                                    <cmdp:confidenceValue>{($r/c[@n='DateUncertain'])}</cmdp:confidenceValue>
+                                </cmdp:Confidence>
+                            </cmdp:DateSent>
                         </cmdp:Letter>
                     </cmd:Components>
                 </cmd:CMD>
             </xsl:result-document>
         </xsl:for-each>
     </xsl:template>
-    
 </xsl:stylesheet>
