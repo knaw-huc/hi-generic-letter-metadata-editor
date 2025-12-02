@@ -118,10 +118,6 @@
 			</Component>
 		</Component>
 		<Component name="DateSent">
-			<Element name="correspondenceAction">
-				<clariah:explanation src="documentation"/>
-				
-			</Element>
 			<Component name="DateObservation">
 				<Element name="dateAsWritten">
 					<clariah:explanation src="documentation"/>
@@ -155,9 +151,6 @@
 		</Component>
 		<Component name="DateReceived">
 			<clariah:explanation src="documentation"/>
-			<Element name="correspondenceAction">
-				<clariah:explanation src="documentation"/>
-			</Element>
 			<Component name="DateObservation">
 				<Element name="dateAsWritten">
 					<clariah:explanation src="documentation"/>
