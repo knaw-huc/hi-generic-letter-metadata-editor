@@ -176,17 +176,6 @@
 			</Component>
 		</Component>
 		<Component name="DateSent" CardinalityMin="1" CardinalityMax="1">
-			<Element name="correspondenceAction" ConceptLink="https://lod.academy/cer/vocab/ontology#12_Correspondence_Action" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
-				<Documentation>This class comprises the activities making up processes of correspondence items involving at least two persons. This class and its subclasses have been adapted from the TEI standard for correspondences, specifically drawing from the correspAction element.</Documentation>
-				<ValueScheme>
-					<Vocabulary>
-						<enumeration>
-							<item ConceptLink="https://lod.academy/cer/vocab/ontology#13_Sending" AppInfo="">sending</item>
-							<item ConceptLink="https://lod.academy/cer/vocab/ontology#14_Receiving" AppInfo="">receiving</item>
-						</enumeration>
-					</Vocabulary>
-				</ValueScheme>
-			</Element>
 			<Component name="DateObservation" ComponentRef="clarin.eu:cr1:c_1761816151575" CardinalityMin="1" CardinalityMax="1">
 				<Element name="dateAsWritten" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 					<Documentation>Enter the date exactly as it is written in the source (trascription or extraction), but not yet normalized.</Documentation>
@@ -235,17 +224,6 @@
 		</Component>
 		<Component name="DateReceived" ConceptLink="https://lod.academy/cer/vocab/ontology#12_Correspondence_Action" CardinalityMin="1" CardinalityMax="1">
 			<Documentation>This class comprises the activities making up processes of correspondence items involving at least two persons. This class and its subclasses have been adapted from the TEI standard for correspondences, specifically drawing from the correspAction element.</Documentation>
-			<Element name="correspondenceAction" ConceptLink="https://lod.academy/cer/vocab/ontology#12_Correspondence_Action" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
-				<Documentation>This class comprises the activities making up processes of correspondence items involving at least two persons. This class and its subclasses have been adapted from the TEI standard for correspondences, specifically drawing from the correspAction element.</Documentation>
-				<ValueScheme>
-					<Vocabulary>
-						<enumeration>
-							<item ConceptLink="https://lod.academy/cer/vocab/ontology#13_Sending" AppInfo="">sending</item>
-							<item ConceptLink="https://lod.academy/cer/vocab/ontology#14_Receiving" AppInfo="">receiving</item>
-						</enumeration>
-					</Vocabulary>
-				</ValueScheme>
-			</Element>
 			<Component name="DateObservation" ComponentRef="clarin.eu:cr1:c_1761816151575" CardinalityMin="1" CardinalityMax="1">
 				<Element name="dateAsWritten" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 					<Documentation>Enter the date exactly as it is written in the source (trascription or extraction), but not yet normalized.</Documentation>
