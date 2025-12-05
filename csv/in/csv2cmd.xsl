@@ -10,7 +10,7 @@
     
     <xsl:param name="csv" select="'letters.csv'"/>    
     <xsl:param name="user" select="'old_books'"/>
-    <xsl:param name="out" select="'./output'"></xsl:param>
+    <xsl:param name="out" select="'./output'"/>
     
     <xsl:template name="main">
         <xsl:for-each select="csv:getCSV($csv)//r">
