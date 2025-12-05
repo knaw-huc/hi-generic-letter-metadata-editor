@@ -1,0 +1,23 @@
+ERRORS IMPORTING EDGES
+Issue{message=[Record #375] Ignoring edge due to empty source and/or target node ids, level=SEVERE}	SEVERE	
+Issue{message=[Record #388] Ignoring edge due to empty source and/or target node ids, level=SEVERE}	SEVERE	
+Issue{message=[Record #390] Ignoring edge due to empty source and/or target node ids, level=SEVERE}	SEVERE	
+Issue{message=[Record #396] Ignoring edge due to empty source and/or target node ids, level=SEVERE}	SEVERE	
+Issue{message=[Record #399] Ignoring edge due to empty source and/or target node ids, level=SEVERE}	SEVERE	
+Issue{message=[Record #415] Ignoring edge due to empty source and/or target node ids, level=SEVERE}	SEVERE	
+Issue{message=[Record #417] Ignoring edge due to empty source and/or target node ids, level=SEVERE}	SEVERE	
+Issue{message=[Record #440] Ignoring edge due to empty source and/or target node ids, level=SEVERE}	SEVERE	
+Issue{message=[Record #472] Ignoring edge due to empty source and/or target node ids, level=SEVERE}	SEVERE	
+Issue{message=[Record #491] Ignoring edge due to empty source and/or target node ids, level=SEVERE}	SEVERE	
+Issue{message=[Record #502] Ignoring edge due to empty source and/or target node ids, level=SEVERE}	SEVERE	
+Issue{message=[Record #505] Ignoring edge due to empty source and/or target node ids, level=SEVERE}	SEVERE	
+Issue{message=[Record #555] Ignoring edge due to empty source and/or target node ids, level=SEVERE}	SEVERE	
+Issue{message=[Record #573] Ignoring edge due to empty source and/or target node ids, level=SEVERE}	SEVERE	
+Issue{message=[Record #604] Ignoring edge due to empty source and/or target node ids, level=SEVERE}	SEVERE	
+Issue{message=[Record #609] Ignoring edge due to empty source and/or target node ids, level=SEVERE}	SEVERE	
+
+
+ERRORS IMPORTING NODES
+Record 34 (inconsistent)
+Record 129 (inconsistent)
+Record 206 (inconsistent)
