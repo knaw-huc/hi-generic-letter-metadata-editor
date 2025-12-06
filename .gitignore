@@ -207,3 +207,6 @@ marimo/_lsp/
 __marimo__/
 /data/apps/generic-letter-metadata/trace
 .DS_Store
+/csv/in/output
+/csv/out/output
+/data/apps/generic-letter-metadata/profiles/clarin.eu:cr1:p_1758888743558/records

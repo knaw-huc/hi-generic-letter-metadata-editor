@@ -122,3 +122,17 @@ xpath="replace(//*:MdSelfLink,'unl://','')"
 label="nr"
 sort="true"
 filter="true"
+
+# HOOKS
+
+[app.hooks.action.nodes]
+level="app" # TODO: put on person profile
+label="nodes"
+endpoint="nodes"
+hook="nodes"
+
+[app.hooks.action.edges]
+level="app" # TODO: put on letters profile
+label="edges"
+endpoint="edges"
+hook="edges"
