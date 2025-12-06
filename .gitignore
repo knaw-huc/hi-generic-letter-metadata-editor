@@ -209,4 +209,4 @@ __marimo__/
 .DS_Store
 /csv/in/output
 /csv/out/output
-/data/apps/generic-letter-metadata/profiles/clarin.eu:cr1:p_1758888743558/records
+/data/apps/generic-letter-metadata/profiles/*/records
