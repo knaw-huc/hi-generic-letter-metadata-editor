@@ -125,11 +125,17 @@ filter="true"
 
 # HOOKS
 
-[app.hooks.action.nodes]
+[app.hooks.action.persons]
 level="app" # TODO: put on person profile
-label="nodes"
-endpoint="nodes"
-hook="nodes"
+label="persons"
+endpoint="persons"
+hook="persons"
+
+[app.hooks.action.letters]
+level="app" # TODO: put on letter profile
+label="letters"
+endpoint="letters"
+hook="letters"
 
 [app.hooks.action.edges]
 level="app" # TODO: put on letters profile

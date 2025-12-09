@@ -23,11 +23,15 @@ def transform(app: str, stylesheet: str) -> str:
 
 def edges(req:Request, action:str, app: str, prof: str, nr: str, user:str) -> None:
     res = transform(app,"edges")
-    return Response(content=res, media_type="text/csv")
+    return Response(content=res, media_type="text/plain")
 
-def nodes(req:Request, action:str, app: str, prof: str, nr: str, user:str) -> None:
-    res = transform(app,"nodes")
-    return Response(content=res, media_type="text/csv")
+def persons(req:Request, action:str, app: str, prof: str, nr: str, user:str) -> None:
+    res = transform(app,"persons")
+    return Response(content=res, media_type="text/plain")
+
+def letters(req:Request, action:str, app: str, prof: str, nr: str, user:str) -> None:
+    res = transform(app,"letters")
+    return Response(content=res, media_type="text/plain")
     
  
 
