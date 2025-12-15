@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2025-12-09">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <nodes>
+      <node id="1" label="Adam Verduin" />
+      <node id="2" label="Adolf Vorstius" />
+      <node id="3" label="Adolphus Vorstius" />
+      <node id="4" label="Adriaan Ploos Van Amstel" />
+      <node id="5" label="Adriaen Ambrosius" />
+      <node id="6" label="Adrianus Cool" />
+      <node id="7" label="Adrianus van der Burch" />
+      <node id="8" label="Adrianus VI" />
+      <node id="9" label="Aelius Everardus Vorstius" />
+      <node id="10" label="Aemilius Bouchhorstius" />
+      <node id="11" label="Ahasverus Pollio" />
+      <node id="12" label="Albertus Eufrenius" />
+      <node id="13" label="Albertus Pigius" />
+      <node id="14" label="Amelis van Rosendael" />
+      <node id="15" label="Andreas Rivetus" />
+      <node id="16" label="Andreas Waelkis" />
+      <node id="17" label="Anna Maria van Schurman" />
+      <node id="18" label="Anselm Salmius" />
+      <node id="19" label="Antonius De Rode" />
+      <node id="20" label="Antonius Trutius" />
+      <node id="21" label="Arent Van Zuylen Van Nyevelt" />
+      <node id="22" label="Arnoldus Buchelius" />
+      <node id="23" label="Arnoldus Siegenus" />
+      <node id="24" label="Aubertus Miraeus" />
+      <node id="25" label="Balduinus a Duven" />
+      <node id="26" label="Balthazar van Buren" />
+      <node id="27" label="Brigitta Jans" />
+      <node id="28" label="Burgomasters and Magistrate of Utrecht" />
+      <node id="29" label="Carel Van Rietwijk" />
+      <node id="30" label="Carolus Clusius" />
+      <node id="31" label="Casparus Barlaeus" />
+      <node id="32" label="Caspar van Baerle Sr." />
+      <node id="33" label="Ch. Billé" />
+      <node id="34" label="Chapter Church of St Mary" />
+      <node id="35" label="Claesje Van Voorst" />
+      <node id="36" label="Commelinus" />
+      <node id="37" label="Compater" />
+      <node id="38" label="Cornelis Booth" />
+      <node id="39" label="Cornelis Pijnacker" />
+      <node id="40" label="Cornelius Cromstryen" />
+      <node id="41" label="Cornelius Fabius" />
+      <node id="42" label="Cornelius Hagius Jes." />
+      <node id="43" label="Cornelius Valerius" />
+      <node id="44" label="Cornelius van der Myle" />
+      <node id="45" label="Daniel Heinsius" />
+      <node id="46" label="Dean and Chapter of the Church of Utrecht" />
+      <node id="47" label="Dean Church St Mary Utrecht" />
+      <node id="48" label="Deans and Chapters of the 5 Churches of Utrecht" />
+      <node id="49" label="Dirk Canter" />
+      <node id="50" label="Dominus Tienhovius" />
+      <node id="51" label="Edmond Van Buchell" />
+      <node id="52" label="Eduard Poppius" />
+      <node id="53" label="Emont de Buchel" />
+      <node id="54" label="Everard Bronchorst" />
+      <node id="55" label="Everardus Hardvicenus" />
+      <node id="56" label="Everard Vorstius" />
+      <node id="57" label="Florentius Schoonhoven" />
+      <node id="58" label="Floris Oem van Wijngaerden" />
+      <node id="59" label="Francesco Robortellus" />
+      <node id="60" label="Franciscus Alexander de Wit" />
+      <node id="61" label="Franciscus Johannis" />
+      <node id="62" label="Franciscus Sweertius" />
+      <node id="63" label="Franciscus Wichmanus" />
+      <node id="64" label="Franco Duijck" />
+      <node id="65" label="Frederik Schenk van Tautenburg" />
+      <node id="66" label="Frid. Michaël Lotichius" />
+      <node id="67" label="Gedeon Boetzelarius ab Aspera" />
+      <node id="68" label="Georgius Ramus" />
+      <node id="69" label="Gerard Sandelin" />
+      <node id="70" label="Gerardus" />
+      <node id="71" label="Gerardus Bor" />
+      <node id="72" label="Gerardus Joh. Vossius" />
+      <node id="73" label="Gerardus Vossius" />
+      <node id="74" label="Gerardus Wijckersloot" />
+      <node id="75" label="Gerard Van Baern" />
+      <node id="76" label="Gerard Wijnbergen" />
+      <node id="77" label="Gisbertus Lappius a Waveren" />
+      <node id="78" label="Gisbertus Voetius" />
+      <node id="79" label="Gislenius Scrivers" />
+      <node id="80" label="Gonsalvo Perez" />
+      <node id="81" label="Gregorio Mayans" />
+      <node id="82" label="Gruterus" />
+      <node id="83" label="Gualterus Bruno Ronssaeus" />
+      <node id="84" label="Gualtherus Verdoesius" />
+      <node id="85" label="Guilielmus Canterus" />
+      <node id="86" label="Guilielmus Cripius Secundus" />
+      <node id="87" label="Guilielmus Niveldius" />
+      <node id="88" label="Guillielmus Eckius" />
+      <node id="89" label="Gustav Adolph" />
+      <node id="90" label="Gysbertus Masius" />
+      <node id="91" label="Hadrianus Cornelius" />
+      <node id="92" label="Hadrianus Franciscus van der Burch" />
+      <node id="93" label="Hector van Hoxwier" />
+      <node id="94" label="Hendricus Wiltius" />
+      <node id="95" label="Hendrik Coetsveld" />
+      <node id="96" label="Hendrik Van Der Vecht" />
+      <node id="97" label="Henricus Botter" />
+      <node id="98" label="Henricus Eppius" />
+      <node id="99" label="Henricus Franciscus van der Burch" />
+      <node id="100" label="Her. Glycerius" />
+      <node id="101" label="Heribertus Rosweyde" />
+      <node id="102" label="Hubertus Buchelius" />
+      <node id="103" label="Hubert Van Buchell" />
+      <node id="104" label="Hugo Ruysch" />
+      <node id="105" label="Isaacus Gruterus" />
+      <node id="106" label="J. Chrie" />
+      <node id="107" label="Jacob Cats" />
+      <node id="108" label="Jacob Stalpert Van Der Wielle" />
+      <node id="109" label="Jacobus Barlaeus" />
+      <node id="110" label="Jacobus Hazaeus" />
+      <node id="111" label="Jacobus Taets Van Amerongen" />
+      <node id="112" label="Jacob Van Der Eyck" />
+      <node id="113" label="Jacob Van Der Voort" />
+      <node id="114" label="Jacob van Rosendael" />
+      <node id="115" label="Jakob Bolius" />
+      <node id="116" label="Janus Andreas Hultman" />
+      <node id="117" label="Janus Gruterus" />
+      <node id="118" label="Jan van Rosendael" />
+      <node id="119" label="Jaspar Rubine" />
+      <node id="120" label="Jeanne Mabuse" />
+      <node id="121" label="Joachimus a Schank" />
+      <node id="122" label="Joannes Carondolet" />
+      <node id="123" label="Joannes Heurnius" />
+      <node id="124" label="Joannes Jacobus Rosendael" />
+      <node id="125" label="Joannes Verdoesius" />
+      <node id="126" label="Joannes Willemsz." />
+      <node id="127" label="Johan Blanckendael" />
+      <node id="128" label="Johan Hugo de Groot" />
+      <node id="129" label="Johan III" />
+      <node id="130" label="Johan Jacob" />
+      <node id="131" label="Johannes Aepinus" />
+      <node id="132" label="Johannes Axelius" />
+      <node id="133" label="Johannes Barvitius" />
+      <node id="134" label="Johannes Bloemen" />
+      <node id="135" label="Johannes Canter" />
+      <node id="136" label="Johannes Crato a Krafftheim" />
+      <node id="137" label="Johannes De Laet" />
+      <node id="138" label="Johannes de Wit" />
+      <node id="139" label="Johannes de Wterwijck" />
+      <node id="140" label="Johannes Drolshagen" />
+      <node id="141" label="Johannes Fred. Gronovius" />
+      <node id="142" label="Johannes Goch" />
+      <node id="143" label="Johannes Gronovius" />
+      <node id="144" label="Johannes Hon. Van Axel" />
+      <node id="145" label="Johannes II de Hoya" />
+      <node id="146" label="Johannes Isacus Pontanus" />
+      <node id="147" label="Johannes Knijff" />
+      <node id="148" label="Johannes Lentius" />
+      <node id="149" label="Johannes Lontius" />
+      <node id="150" label="Johannes Meursius" />
+      <node id="151" label="Johannes Richardotus" />
+      <node id="152" label="Johannes Ruysch" />
+      <node id="153" label="Johannes van Beverwijck" />
+      <node id="154" label="Johannes Verharius" />
+      <node id="155" label="Johannes Vorstius" />
+      <node id="156" label="Johannes Werckhovius" />
+      <node id="157" label="Johannes Westerburch" />
+      <node id="158" label="Johannes Wintershovius" />
+      <node id="159" label="Johann Heinrich Hottinger" />
+      <node id="160" label="Johann Matthaeus Wacker von Wackersfels" />
+      <node id="161" label="Johan Van Beverwijck" />
+      <node id="162" label="Johan van Hoghelande" />
+      <node id="163" label="Johan Van Sypestein" />
+      <node id="164" label="Jordanus Peutius" />
+      <node id="165" label="Julius Echter von Mespelbrunn" />
+      <node id="166" label="Justus Lipsius" />
+      <node id="167" label="L. Van Winssen" />
+      <node id="168" label="Lambert Snoy" />
+      <node id="169" label="Lambertus Barlaeus" />
+      <node id="170" label="Lambertus Canterus" />
+      <node id="171" label="Lambertus Copperus" />
+      <node id="172" label="Lambertus van der Burch" />
+      <node id="173" label="Leonardus Voochdius" />
+      <node id="174" label="Levinus Botter" />
+      <node id="175" label="Louis Carrion" />
+      <node id="176" label="Ludwig Camerarius" />
+      <node id="177" label="Luffrid Van Ohsterwick" />
+      <node id="178" label="Martin Schoock" />
+      <node id="179" label="Martinus Schipperius" />
+      <node id="180" label="Matthaeus Vossius" />
+      <node id="181" label="Maximilianus de Hornes" />
+      <node id="182" label="Max Morillon" />
+      <node id="183" label="Meinardus Schotanus" />
+      <node id="184" label="Michael Lotichius" />
+      <node id="185" label="Michael Reiniersz Paauw" />
+      <node id="186" label="Moretus" />
+      <node id="187" label="Nicolaus Casembrotius" />
+      <node id="188" label="Nicolaus Dalius" />
+      <node id="189" label="Nicolaus de Castro" />
+      <node id="190" label="Nicolaus Drumesius" />
+      <node id="191" label="NN" />
+      <node id="192" label="Orontius Finaeus" />
+      <node id="193" label="Otto Heurnius" />
+      <node id="194" label="P. Huterus" />
+      <node id="195" label="Paullus Merula" />
+      <node id="196" label="Paul Trandenius" />
+      <node id="197" label="Petrus Hogerbeets" />
+      <node id="198" label="Petrus Perna" />
+      <node id="199" label="Petrus Scriverius" />
+      <node id="200" label="Petrus Venius" />
+      <node id="201" label="Philippus Melanchthon" />
+      <node id="202" label="Philippus Zuerius" />
+      <node id="203" label="Pierus Winsemius" />
+      <node id="204" label="Pieter Corn. Bockenberg" />
+      <node id="205" label="Raedwijck" />
+      <node id="206" label="Raphelengius" />
+      <node id="207" label="Regnardus Brocardus" />
+      <node id="208" label="Rodolphus Real" />
+      <node id="209" label="Rodolphus Snellius" />
+      <node id="210" label="Rumoldo Humbertzio" />
+      <node id="211" label="Samuel Ampzing" />
+      <node id="212" label="Stephanus Emmerich" />
+      <node id="213" label="Symon De Lange" />
+      <node id="214" label="Thalesius" />
+      <node id="215" label="Theodorus Canterus" />
+      <node id="216" label="Theodorus Schrevelius" />
+      <node id="217" label="Theodorus Scoutenus" />
+      <node id="218" label="Theodorus Trandenius" />
+      <node id="219" label="Thomas Metelanus" />
+      <node id="220" label="Thomas Persoels" />
+      <node id="221" label="Thomas Scotisius" />
+      <node id="222" label="Timon van Wou" />
+      <node id="223" label="Uncle of Real" />
+      <node id="224" label="Valerius" />
+      <node id="225" label="Victor Ghiselinus" />
+      <node id="226" label="Vincent Dutrieucx" />
+      <node id="227" label="Walraven Van Haeften" />
+      <node id="228" label="Willebrord Snellius" />
+      <node id="229" label="Willem van Assendelft" />
+      <node id="230" label="Willem Van Nellesteyn" />
+      <node id="231" label="Wouter Van Gouthoeven" />
+      <node id="" label="" />
+      <node id="22 22" label="22 22" />
+      <node id="199 199" label="199 199" />
+      <node id="231 231" label="231 231" />
+    </nodes>
+    <edges>
+      <edge source="1" target="22" id="0" />
+      <edge source="3" target="22" id="1" />
+      <edge source="4" target="22" id="2" />
+      <edge source="4" target="" id="3" />
+      <edge source="5" target="22" id="4" />
+      <edge source="6" target="11" id="5" />
+      <edge source="6" target="218" id="6" />
+      <edge source="6" target="228" id="7" />
+      <edge source="7" target="174" id="8" />
+      <edge source="7" target="33" id="9" />
+      <edge source="7" target="20" id="10" />
+      <edge source="7" target="202" id="11" />
+      <edge source="7" target="181" id="12" />
+      <edge source="7" target="" id="13" />
+      <edge source="7" target="121" id="14" />
+      <edge source="7" target="229" id="15" />
+      <edge source="7" target="165" id="16" />
+      <edge source="7" target="42" id="17" />
+      <edge source="7" target="67" id="18" />
+      <edge source="7" target="151" id="19" />
+      <edge source="7" target="162" id="20" />
+      <edge source="7" target="187" id="21" />
+      <edge source="7" target="100" id="22" />
+      <edge source="8" target="58" id="23" />
+      <edge source="8" target="46" id="24" />
+      <edge source="8" target="28" id="25" />
+      <edge source="8" target="48" id="26" />
+      <edge source="9" target="128" id="27" />
+      <edge source="9" target="40" id="28" />
+      <edge source="9" target="39" id="29" />
+      <edge source="10" target="" id="30" />
+      <edge source="12" target="172" id="31" />
+      <edge source="13" target="192" id="32" />
+      <edge source="14" target="117" id="33" />
+      <edge source="14" target="173" id="34" />
+      <edge source="14" target="" id="35" />
+      <edge source="14" target="61" id="36" />
+      <edge source="14" target="114" id="37" />
+      <edge source="14" target="84" id="38" />
+      <edge source="14" target="213" id="39" />
+      <edge source="14" target="57" id="40" />
+      <edge source="14" target="206" id="41" />
+      <edge source="14" target="228" id="42" />
+      <edge source="14" target="83" id="43" />
+      <edge source="14" target="118" id="44" />
+      <edge source="14" target="125" id="45" />
+      <edge source="14" target="209" id="46" />
+      <edge source="14" target="193" id="47" />
+      <edge source="14" target="52" id="48" />
+      <edge source="14" target="91" id="49" />
+      <edge source="14" target="171" id="50" />
+      <edge source="15" target="17" id="51" />
+      <edge source="16" target="43" id="52" />
+      <edge source="17" target="22" id="53" />
+      <edge source="17" target="45" id="54" />
+      <edge source="17" target="107" id="55" />
+      <edge source="18" target="22" id="56" />
+      <edge source="19" target="22" id="57" />
+      <edge source="20" target="179" id="58" />
+      <edge source="20" target="172" id="59" />
+      <edge source="22" target="138" id="60" />
+      <edge source="22" target="98" id="61" />
+      <edge source="22" target="31" id="62" />
+      <edge source="22" target="50" id="63" />
+      <edge source="22" target="199" id="64" />
+      <edge source="22" target="184" id="65" />
+      <edge source="22" target="97" id="66" />
+      <edge source="22" target="211" id="67" />
+      <edge source="22" target="150" id="68" />
+      <edge source="22" target="146" id="69" />
+      <edge source="22" target="161" id="70" />
+      <edge source="22" target="115" id="71" />
+      <edge source="22" target="143" id="72" />
+      <edge source="22" target="69" id="73" />
+      <edge source="22" target="153" id="74" />
+      <edge source="22" target="73" id="75" />
+      <edge source="22" target="53" id="76" />
+      <edge source="22" target="101" id="77" />
+      <edge source="22" target="" id="78" />
+      <edge source="22" target="231" id="79" />
+      <edge source="22" target="112" id="80" />
+      <edge source="22" target="22" id="81" />
+      <edge source="22" target="29" id="82" />
+      <edge source="22" target="178" id="83" />
+      <edge source="22" target="111" id="84" />
+      <edge source="22" target="216" id="85" />
+      <edge source="22" target="127" id="86" />
+      <edge source="22" target="96" id="87" />
+      <edge source="22" target="217" id="88" />
+      <edge source="22" target="144" id="89" />
+      <edge source="22" target="195" id="90" />
+      <edge source="22" target="141" id="91" />
+      <edge source="22" target="54" id="92" />
+      <edge source="22" target="199 199" id="93" />
+      <edge source="22" target="75" id="94" />
+      <edge source="22" target="103" id="95" />
+      <edge source="22" target="231 231" id="96" />
+      <edge source="22" target="200" id="97" />
+      <edge source="22" target="117" id="98" />
+      <edge source="22" target="49" id="99" />
+      <edge source="22" target="44" id="100" />
+      <edge source="22" target="55" id="101" />
+      <edge source="22" target="23" id="102" />
+      <edge source="22" target="24" id="103" />
+      <edge source="22" target="119" id="104" />
+      <edge source="22" target="27" id="105" />
+      <edge source="22" target="104" id="106" />
+      <edge source="22" target="175" id="107" />
+      <edge source="22" target="137" id="108" />
+      <edge source="22" target="95" id="109" />
+      <edge source="22" target="66" id="110" />
+      <edge source="22" target="226" id="111" />
+      <edge source="22" target="230" id="112" />
+      <edge source="22" target="88" id="113" />
+      <edge source="22" target="168" id="114" />
+      <edge source="22" target="35" id="115" />
+      <edge source="22" target="108" id="116" />
+      <edge source="22" target="177" id="117" />
+      <edge source="22" target="62" id="118" />
+      <edge source="22" target="113" id="119" />
+      <edge source="22" target="164" id="120" />
+      <edge source="23" target="199" id="121" />
+      <edge source="25" target="60" id="122" />
+      <edge source="26" target="205" id="123" />
+      <edge source="30" target="162" id="124" />
+      <edge source="31" target="44" id="125" />
+      <edge source="32" target="109" id="126" />
+      <edge source="34" target="80" id="127" />
+      <edge source="36" target="215" id="128" />
+      <edge source="37" target="122" id="129" />
+      <edge source="38" target="105" id="130" />
+      <edge source="41" target="" id="131" />
+      <edge source="41" target="74" id="132" />
+      <edge source="43" target="" id="133" />
+      <edge source="47" target="65" id="134" />
+      <edge source="48" target="139" id="135" />
+      <edge source="59" target="190" id="136" />
+      <edge source="63" target="191" id="137" />
+      <edge source="64" target="" id="138" />
+      <edge source="65" target="129" id="139" />
+      <edge source="67" target="172" id="140" />
+      <edge source="68" target="172" id="141" />
+      <edge source="69" target="" id="142" />
+      <edge source="70" target="155" id="143" />
+      <edge source="74" target="207" id="144" />
+      <edge source="74" target="126" id="145" />
+      <edge source="77" target="212" id="146" />
+      <edge source="77" target="224" id="147" />
+      <edge source="78" target="159" id="148" />
+      <edge source="78" target="" id="149" />
+      <edge source="78" target="203" id="150" />
+      <edge source="79" target="189" id="151" />
+      <edge source="81" target="116" id="152" />
+      <edge source="82" target="166" id="153" />
+      <edge source="84" target="123" id="154" />
+      <edge source="85" target="136" id="155" />
+      <edge source="85" target="225" id="156" />
+      <edge source="85" target="197" id="157" />
+      <edge source="85" target="219" id="158" />
+      <edge source="86" target="215" id="159" />
+      <edge source="87" target="154" id="160" />
+      <edge source="89" target="176" id="161" />
+      <edge source="90" target="172" id="162" />
+      <edge source="92" target="172" id="163" />
+      <edge source="93" target="155" id="164" />
+      <edge source="94" target="215" id="165" />
+      <edge source="99" target="172" id="166" />
+      <edge source="102" target="172" id="167" />
+      <edge source="102" target="140" id="168" />
+      <edge source="102" target="189" id="169" />
+      <edge source="106" target="" id="170" />
+      <edge source="109" target="169" id="171" />
+      <edge source="110" target="172" id="172" />
+      <edge source="114" target="" id="173" />
+      <edge source="114" target="117" id="174" />
+      <edge source="114" target="118" id="175" />
+      <edge source="117" target="" id="176" />
+      <edge source="117" target="210" id="177" />
+      <edge source="124" target="" id="178" />
+      <edge source="125" target="" id="179" />
+      <edge source="126" target="" id="180" />
+      <edge source="130" target="" id="181" />
+      <edge source="131" target="201" id="182" />
+      <edge source="132" target="194" id="183" />
+      <edge source="133" target="160" id="184" />
+      <edge source="134" target="196" id="185" />
+      <edge source="135" target="215" id="186" />
+      <edge source="138" target="172" id="187" />
+      <edge source="138" target="" id="188" />
+      <edge source="140" target="148" id="189" />
+      <edge source="142" target="182" id="190" />
+      <edge source="145" target="147" id="191" />
+      <edge source="149" target="215" id="192" />
+      <edge source="158" target="172" id="193" />
+      <edge source="162" target="" id="194" />
+      <edge source="170" target="215" id="195" />
+      <edge source="172" target="222" id="196" />
+      <edge source="172" target="186" id="197" />
+      <edge source="172" target="174" id="198" />
+      <edge source="172" target="" id="199" />
+      <edge source="183" target="" id="200" />
+      <edge source="185" target="" id="201" />
+      <edge source="188" target="215" id="202" />
+      <edge source="195" target="" id="203" />
+      <edge source="198" target="215" id="204" />
+      <edge source="199" target="22 22" id="205" />
+      <edge source="200" target="" id="206" />
+      <edge source="208" target="223" id="207" />
+      <edge source="214" target="220" id="208" />
+      <edge source="231" target="22 22" id="209" />
+      <edge source="231" target="" id="210" />
+      <edge source="" target="" id="211" />
+      <edge source="22 22" target="231 231" id="212" />
+    </edges>
+  </graph>
+</gexf>
